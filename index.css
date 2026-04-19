@@ -1,0 +1,41 @@
+ #chat {
+      width: 600px;
+      height: 550px;
+      border: none;
+      overflow-y: scroll;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+    #PW{
+      width: 450px;
+      height: 60px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    #btn{
+      width:100px;
+      height: 60px;
+      background: black;
+      color: white;
+      border-radius: 10px;
+    }
+
+    .msg {
+      padding: 8px 12px;
+      border-radius: 10px;
+      margin: 5px 0;
+      width: fit-content;
+      max-width: 80%;
+    }
+
+    .me {
+      background: black;
+      color: white;
+      align-self: flex-end;
+    }
+
+    .bot {
+      background: #e4e6eb;
+      align-self: flex-start;
+    }
