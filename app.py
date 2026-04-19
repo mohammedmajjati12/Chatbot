@@ -21,7 +21,9 @@ client = OpenAI(
 
 @app.route("/chat", methods=["GET","POST"])
 def chat():
-    user_message = request.json_get("pw")
+    data = request.get_json()
+    user_message = data.get("pw")
+    
 
     response = client.chat.completions.create(
         model="mistral-small",
